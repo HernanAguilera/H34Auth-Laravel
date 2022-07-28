@@ -10,7 +10,8 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "H34\\Auth\\": "src/"
+            "H34\\Auth\\": "src/",
+            "H34\\Auth\\Database\\Factories\\": "database/factories/"
         }
     },
     "extra": {

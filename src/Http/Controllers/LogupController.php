@@ -3,11 +3,10 @@ namespace H34\Auth\Http\Controllers;
 
 use H34\Core\Http\Controllers\BaseController as Controller;
 use H34\Auth\Http\Requests\LogupRequest;
+use H34\Auth\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
-
-use App\Models\User;
 
 class LogupController extends Controller {
 

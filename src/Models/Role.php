@@ -2,12 +2,13 @@
 
 namespace H34\Auth\Models;
 
+use H34\Core\Traits\HasPackageFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Role extends Model
 {
-    use HasFactory;
+    use HasPackageFactory;
 
     public $timestamps = false;
 
