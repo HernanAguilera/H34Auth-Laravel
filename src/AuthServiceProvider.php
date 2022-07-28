@@ -1,6 +1,6 @@
 <?php 
 
-namespace H34\Core;
+namespace H34\Auth;
 
 use Illuminate\Support\ServiceProvider;
 
