@@ -9,11 +9,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class PermissionRepository implements RepositoryContract
 {
-    public static function getAll(array $filters=[]): array|Collection {
+    public static function getAll(array $filters = []): array|Collection
+    {
         return Permission::all();
     }
 
-    public static function getone(int|string $id): Model {
+    public static function getOne(int|string $id): Model
+    {
         return Permission::find($id);
     }
 }
