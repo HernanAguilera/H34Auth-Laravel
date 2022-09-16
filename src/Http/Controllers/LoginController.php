@@ -1,11 +1,13 @@
 <?php
+
 namespace H34\Auth\Http\Controllers;
 
 use H34\Core\Http\Controllers\BaseController as Controller;
 use H34\Auth\Http\Requests\LoginRequest;
 use Illuminate\Support\Facades\Auth;
 
-class LoginController extends Controller {
+class LoginController extends Controller
+{
 
     public function execute(LoginRequest $request)
     {
@@ -21,14 +23,12 @@ class LoginController extends Controller {
 
         $user = Auth::user();
         return response()->json([
-                'status' => 'success',
-                'user' => $user,
-                'authorisation' => [
-                    'token' => $token,
-                    'type' => 'bearer',
-                ]
-            ]);
-
+            'status' => 'success',
+            'user' => $user,
+            'authorization' => [
+                'token' => $token,
+                'type' => 'bearer',
+            ]
+        ]);
     }
-
 }
