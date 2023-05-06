@@ -1,19 +1,11 @@
 <?php
+
 namespace H34\Auth\Http\Requests;
 
-use Illuminate\Foundation\Http\FormRequest;
+use H34\Core\Http\Requests\JsonRequest;
 
-class GenerateTokenResetPasswordRequest extends FormRequest
+class GenerateTokenResetPasswordRequest extends JsonRequest
 {
-    /**
-     * Determine if the user is authorized to make this request.
-     *
-     * @return bool
-     */
-    public function authorize()
-    {
-        return true;
-    }
 
     /**
      * Get the validation rules that apply to the request.

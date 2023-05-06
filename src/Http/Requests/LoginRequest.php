@@ -1,19 +1,11 @@
 <?php
+
 namespace H34\Auth\Http\Requests;
 
-use Illuminate\Foundation\Http\FormRequest;
+use H34\Core\Http\Requests\JsonRequest;
 
-class LoginRequest extends FormRequest
+class LoginRequest extends JsonRequest
 {
-    /**
-     * Determine if the user is authorized to make this request.
-     *
-     * @return bool
-     */
-    public function authorize()
-    {
-        return true;
-    }
 
     /**
      * Get the validation rules that apply to the request.

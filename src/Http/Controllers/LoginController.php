@@ -11,6 +11,7 @@ class LoginController extends Controller
 
     public function execute(LoginRequest $request)
     {
+        // dd($request->all());
         $credentials = $request->only('email', 'password');
 
         $token = Auth::attempt($credentials);

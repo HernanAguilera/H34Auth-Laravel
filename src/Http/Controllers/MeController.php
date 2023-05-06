@@ -1,4 +1,5 @@
 <?php
+
 namespace H34\Auth\Http\Controllers;
 
 use H34\Core\Http\Controllers\BaseController as Controller;
@@ -17,6 +18,6 @@ class MeController extends Controller
 
     public function execute(Request $request, Auth $auth)
     {
-        return response()->json($auth->user());
+        return response()->json(Auth::user());
     }
 }
